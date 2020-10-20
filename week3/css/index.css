@@ -1,0 +1,45 @@
+* {
+  font-family: comic, sans-serif;
+}
+
+header {
+  background-color: pink;
+  word-spacing: 4px;
+}
+
+h1 {
+  color: #ED282E;
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h2 {
+  text-align: center;
+  color: #ED282E;
+}
+
+
+p,
+li {
+  font-size: 18px;
+  text-align: center;
+}
+
+
+a {
+  color: #7F28ED;
+  text-decoration: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+footer {
+  background-color: pink;
+  text-align: center;
+}
