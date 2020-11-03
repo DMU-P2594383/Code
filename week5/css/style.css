@@ -1,0 +1,183 @@
+/*This is a .css file, it acts as a hub for style changes on a webpage. If this file has been linked to the html it should
+apply any changes to it. Below are examples of .css, selectors and how you can change the style of a page i.e text colour,
+text size, aligning etc.
+
+Layout:
+CSS is layed out like the examples below, the selector specifies what element on the page is being changed and the brackets
+are where the code is placed.*/
+
+body {
+  margin: 0.5;
+}
+
+/*Everything on a web page has a margin of around 10px. But you can remove the margin of objects from a website by imputting
+the code above into the <body> element. This removes the margin or allows you to change it.*/
+
+header {
+  text-align: center;
+  background-color: lightblue;
+  color: white;
+  border: 2px lightblue solid;
+  border-radius: -10px;
+  padding: -10px;
+  margin: -10px;
+}
+
+/* Used border rules like radius, padding and margin to make it look cleaner and stand out. I also changed the background
+and text colours. ^ */
+
+footer, a {
+  font-size: 10px;
+  background-color: #4E6FDB;
+  color: white;
+  border: 2px #4E6FDB solid;
+  border-radius: -10px;
+  padding: -5px;
+  margin: -10px;
+}
+
+
+body {
+  font-family: Helvetica, Arial sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/*Changed the font, font family, weight (boldness), text colour and size ^ For the colour I used hexadecimal. */
+
+
+img {
+  width: 100%; height:auto;
+  border-radius: 20px;
+  box-shadow: 5px 7px rgb(211, 211, 211);
+}
+/*Changed the width of the image to span across the entire page as well as use border-radius to give the image rounded
+corners. I also added a box shadow which outlines the image. */
+
+aside {
+  margin: 5px;
+  font-size: 13px;
+  background-color: lightgray;
+  border: 2px lightgray solid;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Added all the border rules i.e border, border-radius, padding and margin to make the key facts section stand out. ^
+
+EVERYTHING I HAVE DONE:
+
+Linking a .css file to html - place the link: <link href="./folder/filename.css" type="text/css" rel="stylesheet"> into
+the <head> of the html file.
+
+1. CSS CODE LAYOUT:
+
+selector {
+  property: value;        <-- Psst. This can also be placed in the <head> of a html page. ;)
+}
+
+You can also place multiple selectors together like so...
+
+p, blockquote {
+  color: red             <-- These only change what is inside the selector.
+}
+
+2. SPECIFYING COLOURS:
+  Colours can be inputted in a couple of different ways. You can use a colour name (css has 140 named colours),
+  hexadecimal colour codes, RGB, RGB +Alpha and HSL + HWB levels.
+
+  i. example of named colour:
+
+header {
+  background-color: red;
+}
+
+  ii. example of hexadecimal:
+
+  header {
+  background-color: #ff0000
+}
+
+  iii. example of RGB
+
+  header {
+  background-color: rgb (255, 0, 0)
+}
+
+  iv. example of transparency
+
+  header {
+  background-color: rgba (255, 0, 0, 0.5)      <-- Transparency is nubered between 0 & 1
+}
+
+There is also HSL (Hue, Saturation, Lightness) as well as HWB (Hue, Whites, Blacks)
+
+3. TEXT STYLING:
+  Text styling allows you to change the way text looks on the website, this can be the font, colour, size, Weight
+  alignment.
+
+  examples:
+
+  font-family: the style of the font such as serif, sans-serif, cursive etc. You can add fonts from your computer
+  and other websites such as Microsoft Fonts. E.g. Arial, Times New Roman.
+
+  E.g.  font-family: Helvetica Arial sans-serif;
+
+  font-weight: how heavy and bold the text is. You can indicate this by using terms such as 'bold' or using
+  numerical values between 0 - 900. 0 being less weight and 900 being heavy.
+
+  E.g.  font-weight: 400;    OR    font-weight: bold;
+
+  font-size: the size of the font. This can be measured in many different ways e.g. pixels, points, em, rem and
+  percentages.
+
+  E.g. font-size: 20px;  <-- Measured in pixels
+       font-size: 20pt;  <-- Measured in points
+       font-size: 20em;  <-- The size relative to the the element
+       font-size: 20rem; <-- The size according to the 'root' element
+       font-size: 200%;  <-- The size as a percentage
+
+       Additionally, you can change the colour and the text alignment.
+
+  E.g. colour: red;  <-- Can input any of the previous colour examples
+      text-align: center  <-- Can be aligned to the left, right, centre or be justified
+
+    examples:
+
+  header {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+  }
+
+  4. BASIC ELEMENT STYLING
+
+  background-color: changes the background colour of elements like the background for the entire webpage or a
+  specific peice of text.
+
+   E.g. background-color: red;  <-- Can input any of the previous colour examples
+
+  border: allows you to place borders around elements, you imput the size, colour and type. Types can be solid,
+  dotted, lined etc.
+
+   E.g. border: 5px black solid;  <-- You can specify the exact height and width as well
+
+  border-radius: changes the radius of the border, can be used to round out the edges of a border.
+
+   E.g. border-radius: 20px;  <-- You can use pixels and percentages.
+
+  padding: creates space between the text and border, used to create space and layout the text.
+
+   E.g. padding: 20px;
+
+  margin: creates a gap around the padding or can be used to delete space if you use negative values.
+
+   E.g. margin: 100px;    OR    margin: -10px    <-- Psst. Any of the previous element styling can use negative
+                                                     values
+
+  box-shadow: adds a shadow to a border, image, video, audio. You imput the size and how far it is away from the
+  element.
+
+   E.g. box-shadow: 5px 7px red;
