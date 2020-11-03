@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--Every html site has this begining code that is placed in the head. <head> is an area where you place things that
+are not seen on the site i.e the device type, language settings etc. -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Natural Sounds - Nature at it's best.</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link href="./css/style.css" type="text/css" rel="stylesheet">
+       </head>
+
+  <body>
+    <!--Header:
+  This is a header indicated by the <header> tags. This acts as the 'bar' at the top of a website where the links to
+the other pages are placed i.e. home, about, contact etc. This can also include a 'menu' which can drop down to show
+links.
+
+Anchors:
+Indicated by the <a> tag they allow hyperlinks to be made with the other pages of a website, other websites, emails,
+phone numbers etc. This can be done like the one below. <a indicates the anchor, href="" includes the link be it to
+another website where you have to place the whole url. i.e https://
+
+Alternatively, you can link to somewhere within the website by placing the folder/filename.html within the area where
+the link would be placed, this is called a relative link.-->
+    <header>
+      <a href="audio&video.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </header>
+
+    <h1>THE AUDIO & VIDEO SITE!</h1>
+      <p>This site features some audio and video files. Feel free to browse our
+         very small selection of nature related audio and video file.</p>
+
+<!--Audio Element:
+This is the audio element.It allows audio files to be played in a website. There are 3 main audio file types that can
+ be used. These are .mp3, .wav and .ogg. In the code I have specified that these are audio files by using the <audio> tag.
+"Source" code allows me to add the files in that I want, src="" is where the folder name and filename are placed with the
+  file type and media type (type="audio/wav").
+
+Within the audio tag you can place 'controls' which allow the audio to appear on the website. You can also add a fallback
+message if the audio file does not show up
+
+Audio attributes include: controls, autoplay, loop, muted, preload and the src= attribute.-->
+<div>
+  <p>This is an audio clip of the woods during a windy day</p>
+ <audio controls>
+   <source src="aud/windywoods.mp3" type="audio/mpeg">
+   <source src="aud/windywoods.ogg" type="audio/ogg">
+   <source src="aud/windywoods.wav" type="audio/wav">
+ </audio>
+</div>
+
+<!--Video element:
+ These are video elements and are similar to the audio elements in terms of layout. They allow videos to be placed into
+ your website in the form of .mp4, .webm or .ogg files. Before you enter source code you have to embed them with a video
+ element i.e <video>. Within this you 'embed' source elements. This is <source src="folder/file" type="video/type">.
+
+ Additionally, you can again place a fallback if the video doesn't load with a message and link.
+
+ Additionally, controls can be added to the video so it shows up on the website. These include src, poster, autoplay,
+ muted, preload, autoplay, height and width. These can change the way it appears on the website and the same goes for
+ audio files.
+
+-->
+
+ <div>
+   <h3>'Rain-drops'</h3>
+    <video muted autoplay loop>
+      <source src="vid/raindropstrim.mp4" type="video/mp4"/>
+      <source src="vid/raindrops.ogv" type="video/ogg"/>
+      <source src="vid/raindrops.webm" type="video/webm"/>
+      <p>Sorry, but your browser could not access this audio file. Maybe
+        this is due to your system or the browser itself being out of date.
+      Click <a href="vid/raindropstrim.mp4">here</a>for an mp4 video.</p>
+    </video>
+ </div>
+
+ <!-- Footer:
+I created a seperate tag <footer> to make an area simiar to the header of a website where anchors <a> can be placed
+to link other websites or sections of the page. Here I made a link to another website online.
+
+<a href="website link">the clickable thing (text or image)</a>                                                   -->
+
+ <footer>
+   <h4>Some nice links:</h4>
+   <p>Click <a href="https://www.bbcearth.com/">here</a> to go to the BBC Earth website where you can see nature related
+      shows and general research. - BBC Earth.
+ </footer>
+
+</body>
+</html>
