@@ -1,0 +1,136 @@
+/*Changed the font family, size and align to the body. This means that it will
+be the same for everything in the <body> unless I specifically change an
+element using CSS*/
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  text-align: justify;
+}
+
+/*Here is an example of what I stated earlier, the header will be changed as
+I am specifically targeting it using a selector
+
+For most of the elements I have used color with hexadecimal colour codes to
+change the background and text colours. I have also used many 'word', 'font',
+and 'text' lines to change the size, spacing, height, alignment and decoration*/
+
+header {
+  background-color: #2E7DC7;
+  color: #ffffff;
+  word-spacing: 18px;
+  font-family: monospace;
+  text-align: left;
+
+  padding: 50px;
+  margin: -10px;
+}
+
+/*For the <h1> subheading I have use the measuremnt 'em',
+this sizes the text according to the relative element.
+Which is the body section at the top.*/
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+ h2, h3 {
+  text-align: left;
+  text-decoration-style: solid;
+}
+
+/*Here I have used rgba which allows me to input red, green, blue codes to
+change the colour and the 'a' changes the opacity of it.*/
+
+h4 {
+  text-align: right;
+  color: rgba(16, 56, 148, 0.5);
+  line-height: 2px;
+  font-size: 30px
+}
+
+
+figcaption {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+
+border-radius: 15px;
+box-shadow: 6px 5px rgb(211, 211, 211);
+
+}
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+border-radius: 15px;
+box-shadow: 6px 5px rgb(211, 211, 211);
+
+}
+
+blockquote {
+  font-size: 20px;
+}
+
+/*Margin is really hard for me to understand so i'll leave this here :)
+https://www.w3schools.com/Css/css_margin.asp From what I can understand
+you can input different peramiters for the left, right, bottom and top
+of an element. This can be used for most elements including text and
+backgrounds.
+
+Here I tried to use it to haphazardly to make the list span down the page.
+
+Here's an example:
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  margin-top: 1px;*/
+
+ol, ul, li {
+  border: 2px lightgrey solid;
+  background-color: lightgrey;
+  border-radius: 15px;
+  line-height: 40px;
+  text-align: center;
+
+  padding: 50px;
+}
+
+a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1C4D7A;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-family: monospace;
+  font-weight:bold;
+  text-align: left;
+
+  padding: 50px;
+  margin: -10px;
+
+}
+
+/**/
