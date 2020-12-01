@@ -6,14 +6,14 @@ margin: 0;
 padding: 0;
 font-family: 'Roboto', sans-serif;
 font-size: 25px;
-color: #f2f2f2;
-background: rgba(85, 85, 85, 0.5);
+color: #d6d6c9;
+background-color: #151515;
 }
 
 .header {
   padding: 20px 30px;
   font-family:"Rock Salt", cursive;
-  color: #f2f2f2;
+  color: #d6d6c9;
   text-align: left;
   background-image: url("../img/clouds.jpg");
   background-position: center;
@@ -35,7 +35,7 @@ background: rgba(85, 85, 85, 0.5);
 
 .link {
   align-content: center;
-  color: #f2f2f2;
+  color: #d6d6c9;
   font-size: 17px;
   text-align: center;
   padding: 15px 19px;
@@ -53,23 +53,21 @@ background: rgba(85, 85, 85, 0.5);
 
 .indexblock {
   padding: 20px 30px;
-  background-color: #848484;
-  border: 5px #fff;
+  background-color: #585858;
+  border: 5px #d6d6c9;
   border-style: solid;
 }
 
 video {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .castblock {
-  padding: 20px 30px;
-  background-color: #848484;
-  border: 5px #fff;
+  background-color: #585858;
+  border: 5px #d6d6c9;
   border-style: solid;
 }
 
@@ -78,7 +76,7 @@ video {
 }
 
 .castheading {
-  padding: 40px 50px;
+  padding: 20px 20px;
   text-align: right;
 }
 
@@ -101,7 +99,7 @@ video {
 
 .inter1, .inter2, .inter3, .inter4 {
   width: 90%;
-  padding: 40px 50px;
+  padding: 5%;
 }
 
 .footer {
@@ -123,10 +121,9 @@ video {
 
 .footerlink {
   align-content: center;
-  color: #f2f2f2;
+  color: #d6d6c9;
   font-size: 17px;
   text-align: center;
-  padding: 15px 20px;
   text-decoration: none;
 }
 
@@ -147,9 +144,9 @@ video {
 
 .wmark {
   align-content: center;
-  color: #f2f2f2;
+  color: #d6d6c9;
   font-size: 12px;
   text-align: center;
-  padding: 50px 30px;
   text-decoration: none;
+  padding: 30px 30px;
 }
