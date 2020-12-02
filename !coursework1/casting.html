@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--Within the head of both html files I placed two lines of code. The first one, the meta "viewport" tag tells the browser to scale
+down elements within the page to a mobile view. If this was not present; mobile devices would use the default widths for desktop and
+cause the site's UI (user interface) to suffer. The second one allowed me to create a seperate CSS file (stylesheet) to change the
+appearance of the site using CSS code.
+Psst. This can also be placed within the "head" or within specific html elements such as videos and images.-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Night of the Living Dead</title>
+  </head>
+<!--Everything in the body on the cast page has been placed within an "article" attribute, which is a semantic html attribute
+reserved for bulks of text. For example, a blog would use <article> as it seperates all the sections or "posts". In this case
+it seperates my "articles" that include actor/actress name, image and discription.-->
+  <body>
+    <article>
+      <header class="header">
+        <h1 class="h1header">Night of the Living Dead</h1>
+      </header>
+<!--TOPNAV-->
+      <nav class="topnav">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="casting.html">Cast</a>
+        <a class="link" href="https://www.imdb.com/title/tt0063350/">IMDb</a>
+      </nav>
+<!--CAST 1 - Each cast member has been wrapped in a <section> and a container <div>, these include the name where a heading
+has been used, an image of the actor/actress, a paragraph giving a brief background and finally an audio interview from the
+actor/actress. The section has been given a class so it can be altered using CSS and overall it tells the browser what is
+within it for use by people who have disabilities. Within the section the heading, paragraph, image and audiofile have been
+placed within a <div> container and given class names that has been altered with CSS.-->
+      <section class="cast1">
+        <div class="castblock">
+        <h2 class="castheading">Duane Jones</h2>
+<!--IMAGE 1 - An image has been placed within each section of the actor/actress. All of them have been placed within a class
+named "por" where they have been altered using CSS. Furthermore, each image has been given an appropriate alt text for
+users that have disabilities.-->
+        <img class="por" src="img/duanejones.jpg" alt="Duane Jones Film-still">
+
+        <p class="casttxt">
+          Duane Jones was born in New York on the 2 February 1937. He studied at the University of Pittsburg in his early life and
+          later studied to become an actor. He also taught English in some other Universities. His first major role was as 'Ben' in
+          'Night of the Living Dead', he was credited as being the African-American to play a leading role in a horror film without
+          being directed to do so. He played some minor roles in other films, continued to teach english and also directed theatre
+          productions. He died on 22 July 1988.
+        </p>
+<!--AUDIO 1 - Each section also includes an audio interview. Similar to the video the source code is placed within and <audio>
+attribute. Again certain browsers don't support all file formats, so I have provided 3 diferent formats WAV, MP3 and OGG. Each
+of the audio files have also been provided with a fallback for old browsers and alt text for users with disabilities.-->
+        <audio controls alt="Duane Jones Interview" class="inter1">
+          <source src="aud/robot.wav" type="audio/wav">
+          <source src="aud/robot.mp3" type="audio/mpeg">
+          <source src="aud/robot.ogg" type="audio/ogg">
+          Your browser does not support this audio tag. Click <a href="aud/robot.mp3">here</a> for the audio in MP3 format.
+        </audio>
+
+        </div>
+      </section>
+<!--CAST 2-->
+      <section class="cast2">
+        <div class="castblock">
+        <h2 class="castheading">Judith O'Dea</h2>
+<!--IMAGE 2-->
+        <img class="por" src="img/judithodea.jpg" alt="Judith O'Dea Film-still">
+
+        <p class="casttxt">
+          Judith O'Dea (1945), is an american actress who starred in 'Night of
+          the Living Dead as Barbara.' She also appeared in other movies such as 'The
+          Pirate' (1978) and 'Claustrophobia' (2003). She now runs a
+          Communications firm.
+        </p>
+<!--AUDIO 2-->
+        <audio controls alt="Judith O'Dea Interview" class="inter2">
+          <source src="aud/robot.wav" type="audio/wav">
+          <source src="aud/robot.mp3" type="audio/mpeg">
+          <source src="aud/robot.ogg" type="audio/ogg">
+          Your browser does not support this audio tag. Click <a href="aud/robot.mp3">here</a> for the audio in MP3 format.
+        </audio>
+
+        </div>
+      </section>
+<!--CAST 3-->
+      <section class="cast3">
+        <div class="castblock">
+          <h2 class="castheading">Karl Hardman</h2>
+<!--IMAGE 3-->
+          <img class="por" src="img/karlhardman.jpg" alt="Karl Hardman Film-still">
+
+          <p class="casttxt">
+            Karl Hardman (1927-2007), was an American actor who features in 'Night
+            of the Living Dead' as Harry Cooper. This is one of his only roles, he
+            was a radio producer during his lifetime. He also featured in the follow up
+            movie to Night of the Living Dead. He died in 2007.
+          </p>
+<!--AUDIO 3-->
+          <audio controls alt="Karl Hardman Interview" class="inter3">
+            <source src="aud/robot.wav" type="audio/wav">
+            <source src="aud/robot.mp3" type="audio/mpeg">
+            <source src="aud/robot.ogg" type="audio/ogg">
+            Your browser does not support this audio tag. Click <a href="aud/robot.mp3">here</a> for the audio in MP3 format.
+          </audio>
+        </div>
+      </section>
+<!--CAST 4-->
+      <section class="cast4">
+        <div class="castblock">
+          <h2 class="castheading">Marilyn Eastman</h2>
+<!--IMAGE 4-->
+          <img class="por" src="img/marilyneastman.jpg" alt="Marilyn Eastman Film-still">
+
+          <p class="casttxt">
+            Marilyn Eastman (1933) was an American radio producer born in Pittsburg,
+            she worked with Karl Hardman who also featured in this movie. This is
+            one of her few acing roles where she plays 'Helen Cooper.'
+          </p>
+<!--AUDIO 4-->
+          <audio controls alt="Marilyn Eastman Interview" class="inter4">
+            <source src="aud/robot.wav" type="audio/wav">
+            <source src="aud/robot.mp3" type="audio/mpeg">
+            <source src="aud/robot.ogg" type="audio/ogg">
+            Your browser does not support this audio tag. Click <a href="aud/robot.mp3">here</a> for the audio in MP3 format.
+          </audio>
+        </div>
+      </section>
+<!--BOTTOMNAV-->
+      <footer class="footer">
+        <nav class="bottomnav">
+          <a class="footerlink" href="https://www.imdb.com/title/tt0063350/">IMDb</a>
+          <a class="footerlink" href="https://livingdead.fandom.com/wiki/Night_of_the_Living_Dead">FANDOM</a>
+          <a class="footerlink" href="https://en.wikipedia.org/wiki/Night_of_the_Living_Dead">WIKIPEDIA</a>
+        </nav>
+<!---WATERMARK-->
+        <div class="watermark">
+          <label class="wmark" >P2594383 - Made by Samual Richardson, Multimedia 1, 2020-2021</label>
+        </div>
+
+      </footer>
+    </article>
+  </body>
+</html>

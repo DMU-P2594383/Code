@@ -1,0 +1,193 @@
+/*IMPORTED CONTENT - I imported some fonts from Google Fonts for use on the webpages. You can either place them within the html document
+or here in the CSS file for use in your code. I used certain fonts to work with my overall theme.*/
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*BODY - I placed some of the generic CSS code within the body as anything within the body of the html file will be affected by the
+CSS code here. Margin has been set to 0 so the elements of the webpage are not effected by their default margin settings (takes away
+the margin). I used the fonts that I imported to change the website's default font to 'Roboto', increased the font-size to 25 pixels
+because the original size was too small, changed the text color using 'color' to a grey using a hexidecimal code (which is my prefered
+method) and finally changed the background of the website to a dark-grey to comlement the 'horror' theme.*/
+body {
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+font-size: 25px;
+color: #d6d6c9;
+background-color: #151515;
+}
+/*HEADER - The header was split into two different classes using html, the first was for the background of the heading and the
+second was to directly edit the text. I padded the heading 20 pixels to 30 pixels, 20 being the top and bottom + 30 being the left and
+the right. This creates space around an element so it's not squished together and makes it aesthetically pleasing. For the header I
+wanted a more 'spooky' + 'horror' font so I changed the font to 'Rock Salt' (another imported font from Google Fonts). I altered the
+colour of the font and placed a background image of clouds behind the heading. I downloaded an image and placed it into a seperate
+folder and using a 'url' you can use images from your webpage directory. To finalise the image I changed the view to a central one.*/
+.header {
+  padding: 20px 30px;
+  font-family:"Rock Salt", cursive;
+  color: #d6d6c9;
+  background-image: url("../img/clouds.jpg");
+  background-position: center;
+}
+/*I created a seperate class for the heading where I simply made the text larger than the rest on the webpage as well as placing it in
+the centre of the header.*/
+.h1header {
+  font-size: 40px;
+  text-align: center;
+}
+/*TOPNAV - Topnav includes all the navigation links to the other webpages. The 'Topnav' class here controls the appearance of the surr-
+ounding area of the links. I changed the background colour using another hexidecimal code to a midtone grey. Using flexbox I centred
+the links to the middle of the page, which can't be done using 'floats'. I set the direction to 'row' that places each link side by side,
+used 'justify content' to place the links in the centre of the page. In my case I didn't see the need to use other flexbox attributes like
+'flex grow' and so on because I wanted a simple navigation bar at the top of the page.*/
+.topnav {
+  background-color: #383838;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/*This section of code alters the syle of the links themselves. I aligned the links to the centre of their respective space, change the
+text colour to match the rest of the webpages. Using font size I made the links slightly smaller than the text at about 17 pixels just
+to ensure they are noticeably different. The padding was around 15 pixels (top and bottom) + 20 pixels (left and right). Finally, I
+removed the text decoration from the links so they were not underlined as they would be highlighted by the 'hover' code.*/
+.link {
+  align-content: center;
+  color: #d6d6c9;
+  font-size: 17px;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+/*This small bit here changes the link colour when they are hovered over with the mouse on desktop or when they are pressed on a touch-
+screen device. Background colour is the colour that the link changes to when the are hovered over or pressed on and 'color' simply changes
+the text colour when they are pressed or hovered over.*/
+.topnav a:hover {
+  background-color: #d6d6c9;
+  color: black;
+}
+/*INDEX PAGE - These have been used to alter the style of the index page. The first class simply creates space around the text
+using padding. 20 pixels by 30 pixels (top and bottom to left to right).*/
+.synopsis {
+  padding: 20px 30px;
+}
+/*This class controls the style of the surrounding area, padding again was use to create space around he element, I changed the
+background colour to a light grey with a white border 5 pixels thick. I used 'border style' to make the border solid. And finally
+I used 'border radius' to round off the edges of the container.*/
+.indexblock {
+  padding: 20px 30px;
+  background-color: #585858;
+  border: 5px #d6d6c9;
+  border-style: solid;
+  border-radius: 10px;
+}
+/*I directly change the style of the video making the width 100% to span across the screen and kept the height as auto. I used
+'display block' to make the video act similar to a paragraph or a heading, which can be used to centre a video. Finally, I used
+'object fit' to make the video 'poster' fit over the video.*/
+video {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+/*CAST PAGE - This part affects the style of the cast page, from the text to the boxes that each cast member is placed in and the
+audio interviews. Below is the 'cast block' class which is exactly the same as the 'index block'.*/
+.castblock {
+  background-color: #585858;
+  border: 5px #d6d6c9;
+  border-style: solid;
+  border-radius: 10px;
+}
+/*Each cast member is placed within it's own section, similar to a blog website. Here I just altered the padding of the section 30
+pixels to 40 pixels.*/
+.cast1, .cast2, .cast3, .cast4 {
+  padding: 30px 40px;
+}
+/*Each cast member has a heading, I made the padding 20 pixels by 20 pixels and made the text inherit the space around itself.*/
+.castheading {
+  padding: 20px 20px;
+  text-align: right;
+}
+/*This contols the style of the cast member's discription, I added padding to the blocks of text as well as make the text inherit
+the space around itself. In combination with the image floats this complents the iamges*/
+.casttxt {
+  padding: 40px 50px;
+  text-align: left;
+}
+/*This here is the code that controls the style of the images on the cast page. I set the images to be 35% of the width of the
+'cast block'. I gave them some padding around the outside of 20 pixels to 30 pixels. I also made the images float left, which allows
+the the text to wrap around the right hand side of the image. But this isn't all there is to it*/
+.por {
+  width: 35%;
+  float: left;
+  padding: 20px 30px;
+}
+/*Here I used a 'marker' that basically creates a break between different floats. The way that floats work are that they place
+themselves in any empty space, which you don't want. So you place a marker to seperate them.*/
+.cast1, .cast2, .cast3, .cast4:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*AUDIO - Each one of these are an audio file to represent the audio interview of that cast member. I made them 90% of the width
+of the cast block making sure they have enough padding to not interfere with the text and image above. To finish them off I gave
+them a slight border radius that rounds off the corners of an element. This applies to other things as well, like my index and
+cast blocks.*/
+.inter1, .inter2, .inter3, .inter4 {
+  width: 90%;
+  padding: 5%;
+  border-radius: 20px;
+}
+/*BOTTOMNAV - I added links to the footer that take you to external websites related to the movie. Similar to the topnav I seperated
+the links into three classes. The footer itself, the space around the links and the links themselves. I made the footer a rather large
+using padding, changed the background colour to black, the text colour to white and centred the text to the middle.*/
+.footer {
+  color: #d6d6c9;
+  background-color: #000000;
+  padding: 50px 70px;
+  text-align: center;
+}
+/*For the area surrounding the links I changed the background colour to black to match the footer represented by the hex code #000.
+I used flexbox to arrange the links as a row so they were side to side. I then used a flexbox command that does not show up on atom
+but works called 'space evenly' that evenly spaces each link the same distance apart. I also made sure that word spacing was normal.*/
+.bottomnav {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  word-spacing: normal;
+}
+/*This controls the style of the links. I changed the text colour to white, made the font size 17 pixels, aligned the text to the centre
+of the box and removed the text decoration of the links to make them look a bit cleaner.*/
+.footerlink {
+  align-content: center;
+  color: #d6d6c9;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+}
+/*This was not really necessary to keep in but I changed the hover colour to black and the text colour to a light grey when hovered over
+or pressed. (inactive).*/
+.footerlink a:hover{
+  background-color: #000;
+  color: #383838;
+}
+/*WATERMARK - This is a simple watermark I made for the footer of the website that emulates the copyright infomation of a webpage.
+I used flexbox to place the watermark in the centre of the footer using space-evenly as mentioned earlier. I made sure the back-
+ground colour was the same as the footer (black). */
+.watermark {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  word-spacing: normal;
+}
+/*Here I altered the watermark itself, changing the text color to white (contrasting the black). I made the font size even smaller
+than the rest of the text on the webpages to again emulate a copyright. I made sure to align the text to the centre and remove the
+text decoration of the links. Finally, I added padding to seperate it from the links above.*/
+.wmark {
+  align-content: center;
+  color: #d6d6c9;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px 30px;
+}

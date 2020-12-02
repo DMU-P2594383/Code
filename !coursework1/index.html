@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Night of the Living Dead</title>
+  </head>
+<!--The body tag contains all of the content that appears on the webpage. Within my index.html document it features the movie
+synopsis and the trailer for the film. My chosen film was 'Night of the Living Dead'. I've used semantic html elements such as
+<header>, <nav>, <section>, <footer> to seperate key parts of the website and improve accessibility. I have also used <div>
+attributes to create "containers" using the class attribute, this allowed me to create blocks for each section and directly
+edit the contents of each block.-->
+  <body>
+<!--HEADER - This is the main header of the website, I used the <h1> attribute for some simple text stating the movie title.-->
+    <header class="header">
+      <h1 class="h1header">Night of the Living Dead</h1>
+    </header>
+<!--TOPNAV - This section here acts as a hub for both the "home" & "cast" pages. They are placed within a <nav> attribute that
+seperate navigation links from other attributes and sections on the page. Navigation allows more accessibility for users with
+disabilities as it can tell screen readers and other aparatus that these are used to navagate pages. I also added an extenal
+link to the IMDb page for the movie. Finally, I added these links to a "topnav" class and each link has been added to a "link"
+class for use in CSS, where I used flexbox display to alter the way the links look.-->
+    <nav class="topnav">
+      <a class="link" href="index.html">Home</a>
+      <a class="link" href="casting.html">Cast</a>
+      <a class="link" href="https://www.imdb.com/title/tt0063350/">IMDb</a>
+    </nav>
+<!--SYNOPSIS - In this section I placed the synopsis of the film with a heading. All of the attributes are placed into a <section>
+which is another semantic html attribute. Sections usually contain headings with complementary text alongside them. Similar to <nav>
+sections tell the browser what it is and allows other programs to read the text. The heading and paragraph are placed in another
+"container", where I used a <div> and allows me to edit the surrounding space seperately to the other elements within the <div>.-->
+    <section class="synopsis">
+      <div class="indexblock">
+        <h2>What is the plot?</h2>
+          <p>
+            Widley considered the first 'zombie flick' that follows the modern zombie 'stereotypes', Night of the Living Dead is a
+            film where people must survive the zombie outbreak directed by George A. Romero. After visting a cemetery to pay respects,
+            Johnny and Barbara (Judith O'Dea) are suddenly confronted by...the UNDEAD! During the commotion Barbara and Johnny split up.
+            Wandering alone Barbara stumbles accross a house where other survivors are held up. Among them are 'Ben' (Duane Jones),
+            'Harry Cooper' (Karl Hardman) and 'Helen Cooper' (Marilyn Eastman). They must survive the outbreak but what will come of
+            them?
+          </p>
+      </div>
+    </section>
+<!--TRAILER - Here is where I placed the film trailer for the website. I wrapped the video source code within a container
+<div> classed as "trailer". I placed <source> attributes within a <video> attribute using three different video formats. These
+allow the video to be played on different browsers as certain browsers only use some of the available video formats. I mainly ran
+my pages using Firefox, which supports MP4, OGV and WEBM. However, other browsers such as Safari and older versions of modern
+browsers don't support some formats. E.g. Safari only supports the MP4 format. Each link has been given "alt" text that tells
+accessibility programs what the video is. Futhermore, I have also included a fallback link to the video if it does not load,
+which can happen on older versions of browsers.-->
+    <div class="trailer">
+      <video controls alt="Night Of The Living Dead Trailer" poster="img/livingdeadposter.jpg" width="800px" height="600px">
+        <source src="vid/nightofthelivingdeadtrailer.mp4" type="video/mp4" alt="Night Of The Living Dead Trailer">
+        <source src="vid/nightofthelivingdeadtrailer.ogv" type="video/ogg" alt="Night Of The Living Dead Trailer">
+        <source src="vid/nightofthelivingdeadtrailer.webm" type="video/webm" alt="Night Of The Living Dead Trailer">
+        Your browser does not support this video tag. Click <a href="vid/nightofthelivingdeadtrailer.mp4">here</a> for the video in MP4 format.
+      </video>
+    </div>
+<!--I added a <br> or "break" attribute that simply seperates two attributes and creates space between them-->
+    <br>
+<!--BOTTOMNAV - I placed some navigation links at the bottom of the webpage within the <footer> (another semantic html attribute).
+Similar to the topnav; the bottomnav has been placed into "classes" that allowed my to edit there appearance within CSS using
+flexbox. This was to emulate footer links on other websites.-->
+    <footer class="footer">
+      <nav class="bottomnav">
+        <a class="footerlink" href="https://www.imdb.com/title/tt0063350/">IMDb</a>
+        <a class="footerlink" href="https://livingdead.fandom.com/wiki/Night_of_the_Living_Dead">FANDOM</a>
+        <a class="footerlink" href="https://en.wikipedia.org/wiki/Night_of_the_Living_Dead">WIKIPEDIA</a>
+      </nav>
+<!--WATERMARK - This <div> class contains the watermark for my website including my P Number, Name, Module and date. I used a
+<label> and placed this all in a "container" to edit this within CSS using flexbox. The idea behind this was to create some-
+thing similar to the footer's of actual websites, that usually include copyright infomation and so on.-->
+      <div class="watermark">
+        <label class="wmark" >P2594383 - Made by Samual Richardson, Multimedia 1, 2020-2021</label>
+      </div>
+    </footer>
+  </body>
+</html>
