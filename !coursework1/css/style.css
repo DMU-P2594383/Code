@@ -110,7 +110,7 @@ pixels to 40 pixels.*/
 /*This contols the style of the cast member's discription, I added padding to the blocks of text as well as make the text inherit
 the space around itself. In combination with the image floats this complents the iamges*/
 .casttxt {
-  padding: 10px;
+  padding: 4px;
   text-align: left;
 }
 /*This here is the code that controls the style of the images on the cast page. I set the images to be 35% of the width of the
