@@ -91,6 +91,7 @@ video {
 /*CAST PAGE - This part affects the style of the cast page, from the text to the boxes that each cast member is placed in and the
 audio interviews. Below is the 'cast block' class which is exactly the same as the 'index block'.*/
 .castblock {
+  padding: 20px 30px;
   background-color: #585858;
   border: 5px #d6d6c9;
   border-style: solid;
@@ -99,7 +100,7 @@ audio interviews. Below is the 'cast block' class which is exactly the same as t
 /*Each cast member is placed within it's own section, similar to a blog website. Here I just altered the padding of the section 30
 pixels to 40 pixels.*/
 .cast1, .cast2, .cast3, .cast4 {
-  padding: 30px 40px;
+  padding: 20px 30px;
 }
 /*Each cast member has a heading, I made the padding 20 pixels by 20 pixels and made the text inherit the space around itself.*/
 .castheading {
