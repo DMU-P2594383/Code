@@ -113,7 +113,11 @@ console.log("Button Clicked");
 }
 */
 
-moveTrump = () => {console.log("trump")};
+moveTrump = () => {
+  console.log("trump");
+  // more here
+                  
+};
 let trump = document.getElementById ("trump");
 let x = Math.random() * (window.innerWidth - 100);
 let y = Math.random() * (window.innerHeight - 100);
