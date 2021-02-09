@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background-image: url(../img/rally.jpg);
+  background-size: cover;
+}
+
+div {
+  width: 100vh;
+  height: 100vh;
+}
+
+img {
+  width: 100px;
+}
+
+#trump {
+  display: inline-block;
+  transform: translate();
+}
